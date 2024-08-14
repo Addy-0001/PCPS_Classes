@@ -1,10 +1,14 @@
 import numpy as np
 
+# pip install numpy
+# python3 -m pip install numpy
+# python -m pip install numpy
+
 # Creating Arrays
 # Create a 1D array
 arr1 = np.array([1, 2, 3, 4, 5])
 print("1D Array:", arr1)
-
+print(type(arr1))
 # Create a 2D array
 arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print("2D Array:\n", arr2)
@@ -49,10 +53,10 @@ print("Transpose:\n", transpose)
 
 
 # Statisticial Operations
-arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9]) # sum = 45, n = 9
 
 # Mean
-mean = np.mean(arr)
+mean = int(np.mean(arr))
 print("Mean:", mean)
 
 # Median
