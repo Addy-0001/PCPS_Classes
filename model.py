@@ -2,6 +2,7 @@
 
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense
+import tensorflow as tf
 
 # Create a simple neural network
 model = Sequential([

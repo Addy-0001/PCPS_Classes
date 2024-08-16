@@ -1,8 +1,8 @@
 import tensorflow as tf
 
 # scalar, vector, and matrix constants
-scalar = tf.constant(5.0)
-vector = tf.constant([1.0, 2.0, 3.0])
+scalar = tf.constant(5)
+vector = tf.constant([1.0, 2, 3.0])
 matrix = tf.constant([[1.0, 2.0], [3.0, 4.0]])
 
 print("Scalar:", scalar)
@@ -38,5 +38,6 @@ def f(x):
 x = tf.Variable(3.0)
 with tf.GradientTape() as tape:
     y = f(x)
+    print(y)
 gradient = tape.gradient(y, x)
 print("Gradient of x^2 at x=3:", gradient)
